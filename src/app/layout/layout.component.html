@@ -1,0 +1,4 @@
+<div class="container">
+  <app-search (inputedItem)="addingItem($event)"></app-search>
+  <app-list *ngFor="let item of items" [item]="item"></app-list>
+</div>
